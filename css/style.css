@@ -1,0 +1,65 @@
+/* *********  BEGIN STARTER CODE **********/
+body{
+margin: 0;
+padding: 0;
+}
+
+h1{
+  font-size: 32px;
+  text-align: center;
+  line-height: 2;
+}
+
+span{
+  font-family: courier;
+  font-weight: bold;
+}
+
+footer{
+  background:black;
+  color:white;
+  text-align: center;
+}
+
+/* *********  END STARTER CODE **********/
+
+/* BEGIN INSTRUCTIONS */
+
+/* 1. Create a grid container with two 250px columns
+Add space between the rows and columns */
+
+
+/* 2. After using Inspect Element, modify the images 
+to fit within their grid cell. */
+
+/* 3. After using Inspect Element, modify the container 
+use align and justify the images inside of it. */ 
+
+/* 4. Every other row should have just one image */ 
+
+/* 5. Modify the images so that you can see 10px of their 
+green background */ 
+
+/* 6. Do your images still fit inside the grid lines? 
+If not, can you use box-sizing to fix it? */
+
+/* 7. Modify the container to use 1fr 1fr.  
+What happens to the alignment?
+
+Change the container back to 250px 250px.*/
+
+/* 8. Modify the images and hardcode a width ~150px.
+What affect does hardcoding the images have on the use of grid?*/
+
+/* 9. What happens if I move the footer into the .container
+element? */
+ 
+.container{
+  border: 3px solid blue;
+  
+}
+
+.container img{
+  border:2px solid black;
+  background:lightgreen;
+}
