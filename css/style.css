@@ -27,6 +27,10 @@ footer{
 
 /* 1. Create a grid container with two 250px columns
 Add space between the rows and columns */
+.container{
+  display: grid;
+  grid-template-columns: 250px 250px; 
+}
 
 
 /* 2. After using Inspect Element, modify the images 
