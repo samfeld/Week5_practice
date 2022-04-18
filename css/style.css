@@ -28,24 +28,42 @@ footer{
 /* 1. Create a grid container with two 250px columns
 Add space between the rows and columns */
 .container{
+  border: 3px solid blue;
   display: grid;
   grid-template-columns: 250px 250px; 
+  row-gap: 10px;
+  column-gap: 30px;
 }
 
 
 /* 2. After using Inspect Element, modify the images 
 to fit within their grid cell. */
+.container img{
+  width: 100%;
+}
+
 
 /* 3. After using Inspect Element, modify the container 
 use align and justify the images inside of it. */ 
-
+.container{
+  justify-content: center;
+  align-items: center;
+}
 /* 4. Every other row should have just one image */ 
-
+.container img:nth-child(3n){
+  grid-column: 1/ 3;
+}
 /* 5. Modify the images so that you can see 10px of their 
-green background */ 
+green background --iif padding wasn't there, only see border*/ 
+.container img{
+  padding: 10px;
+}
 
 /* 6. Do your images still fit inside the grid lines? 
 If not, can you use box-sizing to fix it? */
+.container img{
+  box-sizing:border-box;
+}
 
 /* 7. Modify the container to use 1fr 1fr.  
 What happens to the alignment?
@@ -53,17 +71,15 @@ What happens to the alignment?
 Change the container back to 250px 250px.*/
 
 /* 8. Modify the images and hardcode a width ~150px.
-What affect does hardcoding the images have on the use of grid?*/
+What affect does hardcoding the images have on the use of grid?
+makes them all small */
 
 /* 9. What happens if I move the footer into the .container
 element? */
- 
-.container{
-  border: 3px solid blue;
-  
-}
+
 
 .container img{
   border:2px solid black;
   background:lightgreen;
+
 }
